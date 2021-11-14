@@ -1,5 +1,6 @@
 ﻿#include "widget.h"
 #include "ui_widget.h"
+#include  <QDebug>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -8,13 +9,16 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
 }
 
+
+
+QDebug<"woaixueixi";
 Widget::~Widget()
 {
     delete ui;
 }
 
 void Widget::on_pushButton_clicked()
-{//append()函数
+{//append()函数111111111111111111111111111111111111111111111
     QString str1,str2;
     str1=ui->comboBox1->currentText();
     str2=ui->comboBox2->currentText();
